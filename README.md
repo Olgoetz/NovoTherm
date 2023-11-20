@@ -1,4 +1,3 @@
-# NovoTec
+# NovoTherm
 
 ... coming soon
-# NovoTherm
