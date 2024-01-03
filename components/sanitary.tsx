@@ -1,6 +1,5 @@
 import React from "react";
 import { CheckCircle2 } from "lucide-react";
-import PhotoAlbum from "react-photo-album";
 import Image from "next/image";
 import { cn } from "@/lib/utils";
 import ContactButton from "./contactButton";
