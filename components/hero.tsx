@@ -7,7 +7,7 @@ export const Hero = () => {
     "bg-slate-800/40 flex border border-white p-5 items-center space-x-4 justify-center";
   return (
     <div className="w-full overflow-hidden">
-      <div className=" text-white mt-20 inset-0 animate-ken-burns bg-center md:bg-left-top  bg-blend-overlay bg-slate-400/30 min-h-screen z-10 bg-cover bg-[url(/novotherm-heizung-sanitaer-klima-koeln-titelbild-scaled.jpg)]">
+      <div className=" text-white mt-20 inset-0 animate-ken-burns bg-center md:bg-left-top  bg-blend-overlay bg-slate-400/30 min-h-screen z-10 bg-cover bg-[url(/novotherm-heizung-sanitaer-klima-koeln-titelbild-scaled.webp)]">
         {/* <h2 className="text-2xl uppercase  text-right font-semibold mb-10 border-b pb-2">
           <NovoTec /> :: Wofür stehen wir?
         </h2> */}

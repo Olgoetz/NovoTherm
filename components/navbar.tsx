@@ -157,6 +157,7 @@ export const Navbar = () => {
                     alt="Logo"
                     src="/novotherm_logo.png"
                     quality={100}
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw"
                   />
                 </Link>
               </div>
