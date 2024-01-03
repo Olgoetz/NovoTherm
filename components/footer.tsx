@@ -19,7 +19,7 @@ export const Footer = () => {
     setCurrentYear(year);
   }, []);
   return (
-    <div className="bg-novo-blue w-full pt-10  text-white">
+    <div className="bg-novo-blue w-full pt-10 mt-12  text-white">
       <div className="grid md:grid-cols-3 text-left gap-6 container max-w-[1000px] mx-auto">
         <div className="w-full mx-auto">
           <p className=" text-lg mb-5 font-semibold border-b py-3 border-white">
@@ -90,7 +90,7 @@ export const Footer = () => {
 
       <div className="flex items-center justify-center flex-1 py-10">
         <CopyrightIcon className="h-5 w-5 mr-3" />
-        <p>2023 - {currentYear} NovoTherm GmbH</p>
+        <p>{currentYear} NovoTherm GmbH</p>
       </div>
     </div>
   );

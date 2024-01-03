@@ -36,13 +36,13 @@ const JobSingle = async ({ id }: { id: string }) => {
             <div className="grid grid-cols-[auto,1fr] gap-4 items-center justify-start">
               <div className="relative h-12 w-12">
                 <Image
-                  src="/novotec_logo_pic_only.png"
-                  alt="NovoTec Logo"
+                  src="/novotherm_logo_pic_only.png"
+                  alt="NovoTherm Logo"
                   fill
                 />
               </div>
               <CardTitle>
-                <div className="flex flex-col space-y-2 text-primary-foreground">
+                <div className="flex flex-col space-y-2 text-novo-blue">
                   <h2>{job.fields.title}</h2>
                   <h3 className="text-sm">{job.fields.location}</h3>
                 </div>
@@ -63,9 +63,9 @@ const JobSingle = async ({ id }: { id: string }) => {
                 Bewerbung an{" "}
                 <a
                   className="text-novo-red"
-                  href="mailto:bewerbung@novotec-koeln.de"
+                  href="mailto:bewerbung@novotherm-koeln.de"
                 >
-                  bewerbung@novotec-koeln.de
+                  bewerbung@novotherm-koeln.de
                 </a>
               </p>
               <Button asChild variant="outline" className="p-3 outline-none">

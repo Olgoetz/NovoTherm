@@ -68,8 +68,8 @@ export default function Slider(reference: any) {
                 width={800}
                 height={500}
                 className="mx-auto"
-                //  src={`https:${el.fields.file.url}`}
-                src="/ref1.png"
+                src={`https:${el.fields.file.url}`}
+                // src="/ref1.png"
                 alt={el.fields.title}
               />
             </div>

@@ -22,18 +22,18 @@ const routes = [
     label: "Sanitär",
     link: "/sanitaer",
   },
-  {
-    label: "Klima",
-    link: "/klima",
-  },
-  {
-    label: "Referenzen",
-    link: "/referenzen",
-  },
-  {
-    label: "Jobs",
-    link: "/jobs",
-  },
+  // {
+  //   label: "Klima",
+  //   link: "/klima",
+  // },
+  // {
+  //   label: "Referenzen",
+  //   link: "/referenzen",
+  // },
+  // {
+  //   label: "Jobs",
+  //   link: "/jobs",
+  // },
   {
     label: "Kontakt",
     link: "/kontakt",
@@ -102,7 +102,7 @@ export const Navbar = () => {
                 </Link>
               </div> */}
               <Link href="https://novotec-koeln.de/">
-                <div className="relative h-6 w-6 ml-4 mr-8">
+                <div className="relative h-6 w-6 ml-4 mr-6">
                   <Image
                     fill
                     src="/novotec_logo_pic_only.svg"
@@ -118,7 +118,7 @@ export const Navbar = () => {
           </div>
           {/* row 2 */}
           <div className="px-5 hidden md:flex flex-1 items-center justify-between">
-            <div className=" mr-4 ">
+            <div className="mr-4 ">
               <Link href="/">
                 <img
                   width={200}
@@ -130,7 +130,7 @@ export const Navbar = () => {
             </div>
 
             <div className="text-gray-600">
-              <div className="max-w-[800px] space-x-3 hidden md:flex text-center">
+              <div className="max-w-[800px] space-x-10 hidden md:flex text-center">
                 {routes.map((route) => (
                   <Link
                     key={route.label}

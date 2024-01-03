@@ -9,9 +9,36 @@ import Head from "next/head";
 const raleway = Raleway({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "NovoTherm - Heizung & Sanitär",
+  title: {
+    template: "%s | NovoTherm",
+    default: "NovoTherm - Heizung und Sanitär",
+  },
+
   description: "Heizung und Sanitär in Köln und Umgebung",
-  metadataBase: new URL(process.env.URL!),
+  keywords: [
+    "NovoTherm",
+    "Sanierung",
+    "Sanierungsmanagement",
+    "Ausbaumanagement",
+    "Projektmanagement",
+    "Köln",
+    "NRW",
+    "Nordrhein-Westfalen",
+    "Bonn",
+    "Bau",
+    "Bauwesen",
+    "Bauwirtschaft",
+    "Bauunternehmen",
+    "Bauunternehmer",
+    "Bauprojekt",
+    "Sanitär",
+    "Heizung",
+    "Klimatechnik",
+    "Sanitäranlagen",
+    "Energie",
+  ],
+  metadataBase: new URL(process.env.URL_PROD! || process.env.URL_NONPROD!),
+
   alternates: {
     canonical: "/",
   },

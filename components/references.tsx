@@ -34,8 +34,8 @@ const data = references;
 // };
 
 const References: React.FC = async () => {
-  //const response: any = await getContentByType("reference");
-  const response = data;
+  const response: any = await getContentByType("reference");
+  //  const response = data;
   return (
     <div className="w-full mt-10 md:mt-20 py-20">
       <div className="container">
@@ -52,8 +52,8 @@ const References: React.FC = async () => {
               <div className="relative w-full h-[260px] md:h-[400px]">
                 <Image
                   fill
-                  //  src={`https:${el.fields.photos[0].fields.file.url}`}
-                  src="/ref1.png"
+                  src={`https:${el.fields.photos[0].fields.file.url}`}
+                  // src="/ref1.png"
                   alt={el.fields.title}
                 />
               </div>

@@ -23,9 +23,9 @@ module.exports = {
 
     extend: {
       colors: {
-        "novo-red": "#D01516",
+        "novo-red": "#BA2025",
         "novo-gray": "#6F6E6D",
-        "novo-blue": "#3565A0",
+        "novo-blue": "#3265A1",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
