@@ -109,7 +109,7 @@ export const Navbar = () => {
                     alt="Novotec Logo"
                     style={{ objectFit: "cover" }}
                     quality={100}
-                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw"
+                    sizes="100vw"
                   />
                 </div>
               </Link>
@@ -125,6 +125,7 @@ export const Navbar = () => {
                   height={20}
                   alt="NovoTherm Logo"
                   src="/novotherm_logo.png"
+                  sizes="100vw"
                 />
               </Link>
             </div>
@@ -157,7 +158,7 @@ export const Navbar = () => {
                     alt="Logo"
                     src="/novotherm_logo.png"
                     quality={100}
-                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw"
+                    sizes="100vw"
                   />
                 </Link>
               </div>
