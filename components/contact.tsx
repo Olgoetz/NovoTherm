@@ -64,7 +64,7 @@ export default function Contact() {
   return (
     <div id="kontakt" className="py-20 mt-10 md:mt-20">
       <div className="container ">
-        <h2 className="text-2xl uppercase text-center md:text-left font-semibold mb-10 border-b pb-2">
+        <h2 className="text-2xl uppercase text-left font-semibold mb-10 border-b pb-2">
           So erreichen Sie uns
         </h2>
 

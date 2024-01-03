@@ -129,7 +129,7 @@ const Sanitary = () => {
   return (
     <div id="sanitary" className="py-20 mt-10 md:mt-20">
       <div className="container ">
-        <h2 className="text-2xl uppercase text-center md:text-left font-semibold mb-10 border-b pb-2">
+        <h2 className="text-2xl uppercase text-left font-semibold mb-10 border-b pb-2">
           Sanitär
         </h2>
         <p className="text-xl my-10">
