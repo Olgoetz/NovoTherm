@@ -31,6 +31,18 @@ const photosBefore = [
     src: "/sanitary/Vor der Sanierung (6).jpg",
     position: "object-center",
   },
+  {
+    src: "/sanitary/Dusche Umbau vorher (1).jpg",
+    position: "object-center",
+  },
+  {
+    src: "/sanitary/Bad vorher (1).jpg",
+    position: "object-center",
+  },
+  {
+    src: "/sanitary/Bad vorher (2).jpg",
+    position: "object-center",
+  },
 ];
 const photosAfter = [
   {
@@ -42,7 +54,7 @@ const photosAfter = [
     position: "object-center",
   },
   {
-    src: "/sanitary/Sanierung Bad & WC (3).jpg",
+    src: "/sanitary/Bad nacher (3).jpg",
     position: "object-center",
   },
   {
@@ -55,6 +67,18 @@ const photosAfter = [
   },
   {
     src: "/sanitary/Sanierung Bad & WC (6).jpg",
+    position: "object-center",
+  },
+  {
+    src: "/sanitary/Dusche Umbau nacher (1).jpg",
+    position: "object-center",
+  },
+  {
+    src: "/sanitary/Bad nacher (1).jpg",
+    position: "object-center",
+  },
+  {
+    src: "/sanitary/Bad nacher (2).jpg",
     position: "object-center",
   },
 ];
@@ -162,7 +186,7 @@ const Sanitary = () => {
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
           {photosBefore.map((p) => (
-            <div className="w-full h-[300px] relative" key={p.src}>
+            <div className="w-full h-[500px] relative" key={p.src}>
               <Image
                 src={p.src}
                 alt="Sanierung Bad & WC"

@@ -4,22 +4,22 @@ import Link from "next/link";
 import ContactButton from "./contactButton";
 export const Hero = () => {
   const box_style =
-    "bg-slate-800/40 flex border border-white p-5 items-center  justify-center";
+    "bg-slate-700/60 flex border border-white p-5 items-center justify-center";
   return (
     <div className="w-full overflow-hidden">
-      <div className=" text-white mt-20 inset-0 animate-ken-burns bg-center md:bg-left-top  bg-blend-overlay bg-slate-400/30 min-h-screen z-10 bg-cover bg-[url(/novotherm-heizung-sanitaer-klima-koeln-titelbild-scaled.webp)]">
+      <div className=" text-white mx-auto max-w-[1400px] bg-cover animate-ken-burns bg-center bg-blend-overlay bg-slate-400/30 min-h-screen  z-10 bg-[url(/novotherm.webp)]">
         {/* <h2 className="text-2xl uppercase  text-right font-semibold mb-10 border-b pb-2">
           <NovoTec /> :: Wofür stehen wir?
         </h2> */}
         <div className="min-h-screen container flex items-center justify-center">
-          <div className="max-w-[800px] text-sm text-center">
+          <div className="max-w-[1000px] text-lg text-center">
             <div className={box_style}>
-              <div>
+              {/* <div>
                 <ThumbsUp
                   className="text-novo-blue hidden md:block md:mr-4 "
                   size={80}
                 />
-              </div>
+              </div> */}
               <div>
                 <h1 className="font-semibold uppercase text-xl leading-10 text-white">
                   Wir sind ihr zuverlässiger Partner in Köln & Umgebung

@@ -18,6 +18,10 @@ const photosBefore = [
     src: "/heating/Heizung Vorher (3).jpg",
     position: "object-center",
   },
+  {
+    src: "/heating/Heizung zentralisiert Vorher (1).jpg",
+    position: "object-center",
+  },
 ];
 const photosAfter = [
   {
@@ -30,6 +34,10 @@ const photosAfter = [
   },
   {
     src: "/heating/Heizung Nachher (3).jpg",
+    position: "object-center",
+  },
+  {
+    src: "/heating/Heizung zentralisiert Nachher (1).jpg",
     position: "object-center",
   },
 ];
@@ -156,7 +164,7 @@ const Heating = () => {
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
           {photosAfter.map((p) => (
-            <div className="w-full h-[300px] relative" key={p.src}>
+            <div className="w-full h-[500px] relative" key={p.src}>
               <Image
                 src={p.src}
                 alt="Heizungsinstallation"
