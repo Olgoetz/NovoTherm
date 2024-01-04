@@ -1,12 +1,12 @@
 "use client";
+import { useState } from "react";
 
-import DotLoader from "react-spinners/DotLoader";
+import Link from "next/link";
 
-import axios from "axios";
-
+import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import * as z from "zod";
-import { useForm } from "react-hook-form";
+
 import { Button } from "@/components/ui/button";
 import {
   Form,
@@ -17,12 +17,13 @@ import {
   FormMessage,
 } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
-
 import { Textarea } from "@/components/ui/textarea";
+
+import DotLoader from "react-spinners/DotLoader";
 import { Phone, Mail, MapPin } from "lucide-react";
-import { useState } from "react";
+
 import GoogleMaps from "./googleMaps";
-import Link from "next/link";
+import { sendMail } from "@/app/api/email/actions";
 
 const formSchema = z.object({
   name: z.string(),
@@ -46,9 +47,13 @@ export default function Contact() {
 
   async function onSubmit(values: z.infer<typeof formSchema>) {
     try {
-      const response = await axios.post("/api/email", { values });
-      console.log(response);
-
+      const { name, email, text } = values;
+      const payload = {
+        name,
+        email,
+        message: text,
+      };
+      await sendMail(payload);
       form.reset();
     } catch (err) {
       console.error(err);
@@ -59,7 +64,7 @@ export default function Contact() {
   return (
     <div id="kontakt" className="py-20 mt-10 md:mt-20">
       <div className="container ">
-        <h2 className="text-2xl uppercase text-center md:text-left font-semibold mb-10 border-b pb-2">
+        <h2 className="text-2xl uppercase text-left font-semibold mb-10 border-b pb-2">
           So erreichen Sie uns
         </h2>
 
@@ -74,15 +79,17 @@ export default function Contact() {
             <ul className="flex flex-col w-full space-y-10 text-sm">
               <li className="flex items-center">
                 <Phone size={30} className="mr-5" />
-                +49 (0)221 2924250
+                +49 (0)221 29 20 21 30
               </li>
               <li className="flex items-center">
                 <Mail size={30} className="mr-5" />
-                <a href="mailto:info@novotec-koeln.de">info@novotec-koeln.de</a>
+                <a href="mailto:info@novotherm-koeln.de">
+                  info@novotherm-koeln.de
+                </a>
               </li>
               <li className="flex items-center">
                 <MapPin size={30} className="mr-5" />
-                NovoTec GmbH & Co. KG, Walter-Meckauer-Str. 33a, 51067 Köln
+                NovoTherm GmbH, Walter-Meckauer-Str. 33a, 51067 Köln
               </li>
             </ul>
           </div>

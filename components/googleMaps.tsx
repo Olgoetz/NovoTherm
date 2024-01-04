@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import {
   GoogleMap,
   Marker,
@@ -120,7 +120,7 @@ function GoogleMaps() {
           lat: 50.973138,
           lng: 7.052829,
         }}
-        zoom={18}
+        zoom={15}
         onLoad={onLoad}
       >
         <Marker

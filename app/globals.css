@@ -15,7 +15,7 @@
   animation: kenBurns 30s infinite alternate;
 }
 html {
-  scroll-behavior: smooth !important;
+  /* scroll-behavior: smooth !important; */
   height: 100vh;
 }
 @layer base {

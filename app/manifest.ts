@@ -4,7 +4,7 @@ export default function manifest(): MetadataRoute.Manifest {
   return {
     name: "NovoTherm - Heizung & Sanitär",
     short_name: "NovoTherm",
-    description: "NovoTherm - Heizung %& Sanitär im Raum Köln und Umgebung",
+    description: "NovoTherm - Heizung & Sanitär im Raum Köln und Umgebung",
     start_url: "/",
     display: "standalone",
     background_color: "#fff",

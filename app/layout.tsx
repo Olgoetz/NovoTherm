@@ -5,13 +5,39 @@ import { Raleway } from "next/font/google";
 import { Footer } from "@/components/footer";
 import CookieConsent from "@/components/cookieConsent";
 
-import Head from "next/head";
 const raleway = Raleway({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "NovoTherm - Heizung & Sanitär",
+  title: {
+    template: "%s | NovoTherm",
+    default: "NovoTherm - Heizung und Sanitär",
+  },
+
   description: "Heizung und Sanitär in Köln und Umgebung",
-  metadataBase: new URL(process.env.URL!),
+  keywords: [
+    "NovoTherm",
+    "Sanierung",
+    "Sanierungsmanagement",
+    "Ausbaumanagement",
+    "Projektmanagement",
+    "Köln",
+    "NRW",
+    "Nordrhein-Westfalen",
+    "Bonn",
+    "Bau",
+    "Bauwesen",
+    "Bauwirtschaft",
+    "Bauunternehmen",
+    "Bauunternehmer",
+    "Bauprojekt",
+    "Sanitär",
+    "Heizung",
+    "Klimatechnik",
+    "Sanitäranlagen",
+    "Energie",
+  ],
+  metadataBase: new URL(process.env.URL_PROD! || process.env.URL_NONPROD!),
+
   alternates: {
     canonical: "/",
   },
@@ -27,19 +53,6 @@ export default function RootLayout({
 }) {
   return (
     <html className="scroll-smooth" lang="en">
-      <Head>
-        <link
-          rel="stylesheet"
-          type="text/css"
-          charSet="UTF-8"
-          href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css"
-        />
-        <link
-          rel="stylesheet"
-          type="text/css"
-          href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css"
-        />
-      </Head>
       <body className={raleway.className}>
         <Navbar />
         {children}

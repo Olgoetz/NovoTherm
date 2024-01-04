@@ -1,35 +1,27 @@
-import NovoTec from "@/components/novotec";
-import {
-  Construction,
-  DoorOpen,
-  Droplet,
-  DropletIcon,
-  PencilRuler,
-  Star,
-  ThumbsUp,
-} from "lucide-react";
-
-import { BuildingIcon, PresentationIcon, Leaf, FlameIcon } from "lucide-react";
+import { Award, ThumbsUp } from "lucide-react";
 import Image from "next/image";
-import coreCompetencies from "@/data/coreCompetencies";
-import { cn } from "@/lib/utils";
+import Link from "next/link";
+import ContactButton from "./contactButton";
 export const Hero = () => {
   const box_style =
-    "bg-slate-800/40 flex border border-white p-5 items-center space-x-4 justify-center";
+    "bg-slate-700/60 flex border border-white p-5 items-center justify-center";
   return (
     <div className="w-full overflow-hidden">
-      <div className=" text-white mt-20 inset-0 animate-ken-burns bg-center md:bg-left-top  bg-blend-overlay bg-slate-200/30 min-h-screen z-10 bg-cover bg-[url(/novotherm-heizung-sanitaer-klima-koeln-titelbild-scaled.jpg)]">
+      <div className=" text-white mx-auto max-w-[1400px] bg-cover animate-ken-burns bg-center bg-blend-overlay bg-slate-400/30 min-h-screen  z-10 bg-[url(/novotherm.webp)]">
         {/* <h2 className="text-2xl uppercase  text-right font-semibold mb-10 border-b pb-2">
           <NovoTec /> :: Wofür stehen wir?
         </h2> */}
         <div className="min-h-screen container flex items-center justify-center">
-          <div className="max-w-[800px] gap-4 text-sm text-center">
+          <div className="max-w-[1000px] text-lg text-center">
             <div className={box_style}>
+              {/* <div>
+                <ThumbsUp
+                  className="text-novo-blue hidden md:block md:mr-4 "
+                  size={80}
+                />
+              </div> */}
               <div>
-                <ThumbsUp className="text-novo-blue" size={80} />
-              </div>
-              <div className="flex flex-col">
-                <h1 className="font-semibold text-xl leading-10 text-white">
+                <h1 className="font-semibold uppercase text-xl leading-10 text-white">
                   Wir sind ihr zuverlässiger Partner in Köln & Umgebung
                 </h1>
                 <p>
@@ -42,7 +34,80 @@ export const Hero = () => {
           </div>
         </div>
       </div>
+      <section className="my-20 container">
+        <h1 className="text-center text-3xl md:text-5xl font-bold">
+          Herzlich Willkommen bei NovoTherm
+        </h1>
+        <p className="text-center text-2xl my-10">
+          Folgende Bereiche decken unsere Leistungen ab:
+        </p>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-10">
+          <Link href="/heizung">
+            <div className="flex relative h-[400px] items-center justify-center">
+              <Image
+                src="/heating/Heizung Nachher (3).jpg"
+                alt="Heizungsinstallation"
+                fill
+                className="object-cover -z-10 rounded-lg"
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+              />
+              <p className="text-white uppercase text-3xl bg-slate-300 bg-opacity-50 w-[200px] p-8">
+                Heizung
+              </p>
+            </div>
+          </Link>
+
+          <Link href="/sanitaer">
+            <div className="flex relative h-[400px] items-center justify-center">
+              <Image
+                src="/sanitary/Sanierung Bad & WC (4).jpg"
+                alt="Sanierung Bad & WC"
+                fill
+                className="object-cover -z-10 rounded-lg"
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+              />
+              <p className="text-white uppercase text-3xl bg-slate-300 bg-opacity-50 w-[200px] p-8">
+                Sanitär
+              </p>
+            </div>
+          </Link>
+          {/* <Link href="/klima">
+            <div className="flex relative h-[400px] items-center justify-center">
+              <Image
+                src="/sanitary/Sanierung Bad & WC (4).jpg"
+                alt="Sanierung Bad & WC"
+                fill
+                className="object-cover -z-10 rounded-lg"
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+              />
+              <p className="text-white uppercase text-3xl bg-slate-300 bg-opacity-50 w-[200px] p-8">
+                Klima
+              </p>
+            </div>
+          </Link> */}
+        </div>
+      </section>
+
+      <section className="mb-10 ">
+        <div className="flex items-center justify-center mb-10">
+          <Award className="text-novo-blue" width={80} height={80} />
+          <p className="text-2xl md:text-5xl font-bold text-center">
+            Nur das Beste für Sie
+          </p>
+        </div>
+
+        <p className="text-xl text-center">
+          Unser Team von hochqualifizierten Techniker steht Ihnen zur Verfügung,
+          um Ihre Bedürfnisse zuverlässig und professionell zu erfüllen.
+          Kontaktieren Sie uns für eine umfassende Beratung oder um einen Termin
+          für unsere Dienstleistungen zu vereinbaren.
+        </p>
+      </section>
+
+      <ContactButton />
       {/* <section className="py-20">
+                </div>
         <div className="flex flex-col md:flex-row justify-center items-center text-3xl">
           <h1>Herzlich Willkommen bei </h1>
           <NovoTec classes="ml-2" />

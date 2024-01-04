@@ -22,18 +22,18 @@ const routes = [
     label: "Sanitär",
     link: "/sanitaer",
   },
-  {
-    label: "Klima",
-    link: "/klima",
-  },
-  {
-    label: "Referenzen",
-    link: "/referenzen",
-  },
-  {
-    label: "Jobs",
-    link: "/jobs",
-  },
+  // {
+  //   label: "Klima",
+  //   link: "/klima",
+  // },
+  // {
+  //   label: "Referenzen",
+  //   link: "/referenzen",
+  // },
+  // {
+  //   label: "Jobs",
+  //   link: "/jobs",
+  // },
   {
     label: "Kontakt",
     link: "/kontakt",
@@ -102,14 +102,14 @@ export const Navbar = () => {
                 </Link>
               </div> */}
               <Link href="https://novotec-koeln.de/">
-                <div className="relative h-6 w-6 ml-4 mr-8">
+                <div className="relative h-6 w-6 ml-4 mr-6">
                   <Image
                     fill
                     src="/novotec_logo_pic_only.svg"
                     alt="Novotec Logo"
                     style={{ objectFit: "cover" }}
                     quality={100}
-                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw"
+                    sizes="100vw"
                   />
                 </div>
               </Link>
@@ -118,19 +118,20 @@ export const Navbar = () => {
           </div>
           {/* row 2 */}
           <div className="px-5 hidden md:flex flex-1 items-center justify-between">
-            <div className=" mr-4 ">
+            <div className="mr-4 ">
               <Link href="/">
                 <img
                   width={200}
                   height={20}
                   alt="NovoTherm Logo"
                   src="/novotherm_logo.png"
+                  sizes="100vw"
                 />
               </Link>
             </div>
 
             <div className="text-gray-600">
-              <div className="max-w-[800px] space-x-3 hidden md:flex text-center">
+              <div className="max-w-[800px] space-x-10 hidden md:flex text-center">
                 {routes.map((route) => (
                   <Link
                     key={route.label}
@@ -157,6 +158,7 @@ export const Navbar = () => {
                     alt="Logo"
                     src="/novotherm_logo.png"
                     quality={100}
+                    sizes="100vw"
                   />
                 </Link>
               </div>

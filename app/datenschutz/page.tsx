@@ -71,16 +71,6 @@ export default function Dat() {
           Aufbewahrungsfristen gelöscht, sofern Sie der weitergehenden
           Verarbeitung und Nutzung nicht zugestimmt haben.
           <br />
-          <br />
-          Wir verwenden Sendgrid als Mail-Service-Provider, um die
-          Kontaktaufnahme an unser Unternehmen zu ermöglichen. Die
-          Datenschutzerklärung von Sendgrid befindet sich hier:{" "}
-          <a
-            className="text-novo-red"
-            href="https://www.twilio.com/en-us/legal/privacy"
-          >
-            SendGrid Data Privacy
-          </a>
         </p>
         <p className="font-semibold mt-5">Werbung</p>
         <p>
