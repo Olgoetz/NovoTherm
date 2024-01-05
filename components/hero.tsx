@@ -7,7 +7,7 @@ export const Hero = () => {
     "bg-slate-700/60 flex border border-white p-5 items-center justify-center";
   return (
     <div className="w-full overflow-hidden">
-      <div className=" text-white mx-auto max-w-[1400px] bg-cover animate-ken-burns bg-center bg-blend-overlay bg-slate-400/30 min-h-screen  z-10 bg-[url(/novotherm.webp)]">
+      <div className=" text-white mx-auto max-w-[1500px] bg-cover animate-ken-burns bg-center bg-blend-overlay bg-slate-400/30 min-h-screen  z-10 bg-[url(/novotherm-title.webp)]">
         {/* <h2 className="text-2xl uppercase  text-right font-semibold mb-10 border-b pb-2">
           <NovoTec /> :: Wofür stehen wir?
         </h2> */}
