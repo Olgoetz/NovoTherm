@@ -2,12 +2,17 @@ import { Award, ThumbsUp } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import ContactButton from "./contactButton";
+import CrawlingText from "./banner";
 export const Hero = () => {
   const box_style =
     "bg-slate-700/60 flex border border-white p-5 items-center justify-center";
   return (
     <div className="w-full overflow-hidden">
-      <div className=" text-white mx-auto bg-cover animate-ken-burns bg-center bg-blend-overlay bg-slate-400/30 min-h-screen  z-10 bg-[url(/novotherm-title.webp)]">
+
+      <div className="mt-24 md:mt-40">
+        <CrawlingText />
+      </div>
+      <div className=" text-white mx-auto max-w-[1500px] bg-cover animate-ken-burns bg-center bg-blend-overlay bg-slate-400/30 min-h-screen  z-10 bg-[url(/novotherm-title.webp)]">
         {/* <h2 className="text-2xl uppercase  text-right font-semibold mb-10 border-b pb-2">
           <NovoTec /> :: Wofür stehen wir?
         </h2> */}
