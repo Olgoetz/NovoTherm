@@ -8,6 +8,7 @@ export const Hero = () => {
     "bg-slate-700/60 flex border border-white p-5 items-center justify-center";
   return (
     <div className="w-full overflow-hidden">
+
       <div className="mt-24 md:mt-40">
         <CrawlingText />
       </div>
