@@ -55,19 +55,18 @@ export const Footer = () => {
           <ul className="space-y-5 text-sm">
             <li className="flex items-center">
               <Phone size={24} className="mr-5" />
-              +49 (0)221 29 20 21 30
+              (+49) 0 214 875 498 - 0
             </li>
             <li className="flex items-center">
               <Mail size={24} className="mr-5" />
-              <a href="mailto:info@novotherm-koeln.de">
-                info@novotherm-koeln.de
-              </a>
+              <a href="mailto:info@novotherm-shk.de">info@novotherm-shk.de</a>
             </li>
             <li className="flex items-center">
               <MapPin size={24} className="mr-5" />
               NovoTherm GmbH <br />
-              Walter-Meckauer-Str. 33a <br />
-              51067 Köln
+              Friedrich-Sertürner-Straße 18
+              <br />
+              51377 Leverkuse
             </li>
             <li className="flex items-center">
               <Clock size={24} className="mr-5" />
