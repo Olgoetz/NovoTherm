@@ -79,17 +79,15 @@ export default function Contact() {
             <ul className="flex flex-col w-full space-y-10 text-sm">
               <li className="flex items-center">
                 <Phone size={30} className="mr-5" />
-                +49 (0)221 29 20 21 30
+                (+49) 214 875 498 - 0
               </li>
               <li className="flex items-center">
                 <Mail size={30} className="mr-5" />
-                <a href="mailto:info@novotherm-koeln.de">
-                  info@novotherm-koeln.de
-                </a>
+                <a href="mailto:info@novotherm-shk.de">info@novotherm-shk.de</a>
               </li>
               <li className="flex items-center">
                 <MapPin size={30} className="mr-5" />
-                NovoTherm GmbH, Walter-Meckauer-Str. 33a, 51067 Köln
+                NovoTherm GmbH, Friedrich-Sertürner-Straße 18, 51377 Leverkusen
               </li>
             </ul>
           </div>

@@ -4,6 +4,7 @@ import {
   Marker,
   useJsApiLoader,
   DirectionsRenderer,
+  InfoWindow,
 } from "@react-google-maps/api";
 import { Input } from "./ui/input";
 import { Button } from "./ui/button";
@@ -117,20 +118,34 @@ function GoogleMaps() {
       <GoogleMap
         mapContainerStyle={containerStyle}
         center={{
-          lat: 50.973138,
-          lng: 7.052829,
+          lat: 51.040023361961985,
+          lng: 7.017935010509205,
         }}
-        zoom={15}
+        zoom={18}
         onLoad={onLoad}
       >
         <Marker
           position={{
-            lat: 50.972969,
-            lng: 7.052836,
+            lat: 51.040023361961985,
+            lng: 7.017935010509205,
           }}
           visible={true}
           clickable={false}
+          title="NovoTherm GmbH"
         />
+        <InfoWindow
+          position={{
+            lat: 51.04005,
+            lng: 7.01794,
+          }}
+        >
+          <div className="text-xs">
+            <p className="font-bold">NovoTherm GmbH</p>
+            <p>Friedrich-Sertürner-Str. 18 </p>
+            <p>51377 Leverkusen</p>
+          </div>
+        </InfoWindow>
+
         {directions && <DirectionsRenderer directions={directions} />}
       </GoogleMap>
     </div>
