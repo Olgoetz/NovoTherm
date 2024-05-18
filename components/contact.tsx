@@ -79,7 +79,7 @@ export default function Contact() {
             <ul className="flex flex-col w-full space-y-10 text-sm">
               <li className="flex items-center">
                 <Phone size={30} className="mr-5" />
-                (+49) 214 875 498 - 0
+                (+49) 0 214 875 498 - 0
               </li>
               <li className="flex items-center">
                 <Mail size={30} className="mr-5" />

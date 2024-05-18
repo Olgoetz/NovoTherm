@@ -15,7 +15,7 @@ const page = () => {
         </p>
         <p className="font-semibold mt-5">Kontakt:</p>
         <p>
-          Telefon: (+49) 214 875 498 - 0<br />
+          Telefon: (+49) 0 214 875 498 - 0<br />
           E-Mail: info@novotherm-shk.de <br />
         </p>
         <p className="font-semibold mt-5">Registereintrag:</p>
