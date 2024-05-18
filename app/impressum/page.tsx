@@ -9,13 +9,14 @@ const page = () => {
         </h1>
         <p className="font-semibold mt-5">Angaben gemäß § 5 TMG:</p>
         <p>
-          NovoTherm GmbH Walter-Meckauer-Str. 33a 51067 Köln <br />
+          NovoTherm GmbH, Friedrich-Sertürner-Straße 18, 51377 Leverkusen
+          <br />
           Geschäftsführung: Oliver Altenrath & Thomas Jaworski
         </p>
         <p className="font-semibold mt-5">Kontakt:</p>
         <p>
-          Telefon: +49 0221 29202130 <br />
-          E-Mail: info@novotherm-koeln.de <br />
+          Telefon: (+49) 214 875 498 - 0<br />
+          E-Mail: info@novotherm-shk.de <br />
         </p>
         <p className="font-semibold mt-5">Registereintrag:</p>
         <p>
