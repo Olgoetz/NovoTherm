@@ -66,7 +66,7 @@ export const Footer = () => {
               NovoTherm GmbH <br />
               Friedrich-Sertürner-Straße 18
               <br />
-              51377 Leverkuse
+              51377 Leverkusen
             </li>
             <li className="flex items-center">
               <Clock size={24} className="mr-5" />
