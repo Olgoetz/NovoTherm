@@ -39,7 +39,7 @@ export const Footer = () => {
 
             <li>
               <Link
-                href="https://novotec-koeln.de/"
+                href="https://novotec-gruppe.de/"
                 className="flex items-center"
               >
                 <ExternalLink size={24} className="mr-5" />
