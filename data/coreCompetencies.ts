@@ -46,7 +46,7 @@ const coreCompetencies: Competency[] = [
       "• Energieeffiziente Sanierungen nach den Vorgaben eines individuellen Sanierungsfahrplans (iSFP), welcher zuvor durch einen Energieeffizienzberater erstellt wurde",
       "• Wärmedämmung der Außenwände, des Dachs und des Kellerbereichs",
     ],
-    externalLink: "https://novotherm-koeln.de/",
+    externalLink: "https://novotherm-shk.de/",
     containerStyles: "",
     icon: Leaf,
     iconStyles1: "h-8 w-8",
