@@ -101,7 +101,7 @@ export const Navbar = () => {
                   />
                 </Link>
               </div> */}
-              <Link href="https://novotec-koeln.de/">
+              <Link href="https://novotec-gruppe.de/">
                 <div className="relative h-6 w-6 ml-4 mr-6">
                   <Image
                     fill
