@@ -91,7 +91,7 @@ export const Navbar = () => {
             <div className="separator h-10" />
             <div className="social-media bg-primary-foreground p-2 w-[30%] items-center justify-center flex text-white">
               {/* <div className="relative h-6 w-6 ml-4">
-                <Link href="https://novotherm-koeln.de/">
+                <Link href="https://novotherm-shk.de/">
                   <Image
                     fill
                     src="/immoankauf.png"

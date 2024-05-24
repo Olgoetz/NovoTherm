@@ -15,9 +15,18 @@ resource "vercel_project" "novotherm" {
 }
 
 resource "vercel_project_domain" "prod" {
-  project_id = vercel_project.novotherm.id
-  domain     = "novotherm-koeln.de"
+  project_id           = vercel_project.novotherm.id
+  domain               = "novotherm-shk.de"
+  redirect             = vercel_project_domain.prod2.domain
+  redirect_status_code = 301
 }
+
+
+resource "vercel_project_domain" "prod2" {
+  project_id = vercel_project.novotherm.id
+  domain     = "www.novotherm-shk.de"
+}
+
 
 
 locals {

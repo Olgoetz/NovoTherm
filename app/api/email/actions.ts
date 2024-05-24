@@ -15,7 +15,7 @@ export async function sendMail(emailProps: EmailProps) {
   const { name, email, message } = emailProps;
   try {
     const { data, error } = await resend.emails.send({
-      from: `Kontaktformular novotherm-koeln.de <${process.env.RESEND_FROM_EMAIL}>`,
+      from: `Kontaktformular novotherm-shk.de <${process.env.RESEND_FROM_EMAIL}>`,
       to: [process.env.RESEND_TO_EMAIL as string],
       subject: `Neue Nachricht von ${email}`,
       react: EmailTemplate({ name, email, message }) as React.ReactElement,
