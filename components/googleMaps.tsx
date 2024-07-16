@@ -32,7 +32,7 @@ function GoogleMaps() {
   });
   const [startAddress, setStartAddress] = useState<any>("");
   const [targetAddress, setTargetAddress] = useState<any>(
-    "Walter-Meckauer-Str. 33a, 51067 Köln"
+    "Friedrich-Sertürner-Straße 18, 51377 Leverkusen"
   );
 
   const handleOnChangeStart = (e: React.ChangeEvent<HTMLInputElement>) => {
