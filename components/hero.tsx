@@ -23,8 +23,8 @@ export const Hero = () => {
               </div> */}
               <div>
                 <h1 className="font-semibold uppercase text-xl leading-10 text-white">
-                  Wir sind ihr zuverlässiger Partner in Köln & Umgebung
-                </h1>
+                  Wir sind ihr zuverlässiger Partner in Leverkusen & Umgebung
+                </h1>i
                 <p>
                   Ob Heizung, Sanitär oder Klimatechnik - wir kümmern uns darum.
                   Und wenn es mehr sein darf, setzen wir auch komplette
