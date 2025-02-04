@@ -25,7 +25,7 @@ const page = () => {
           Registernummer: HRB 114741 <br />
         </p>
         <p className="font-semibold mt-5">Steuerliche Angaben:</p>
-        <p>Steuernummer: 218/5728/2891</p>
+        <p>Umsatzsteuernummer: DE360965942</p>
         <p className="font-semibold mt-5">EU-Streitschlichtung</p>
         <p>
           Die Europäische Kommission stellt eine Plattform zur
