@@ -46,6 +46,15 @@ export const Footer = () => {
                 NovoTec – Ausbau & Sanierungsmanagement
               </Link>
             </li>
+            <li>
+              <Link
+                href="https://immoankaeufer.de/"
+                className="flex items-center"
+              >
+                <ExternalLink size={24} className="mr-5" />
+                immoankaeufer.de
+              </Link>
+            </li>
           </ul>
         </div>
         <div className="w-full mx-auto">
